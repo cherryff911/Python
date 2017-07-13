@@ -1,5 +1,5 @@
 <br>
-<span style="color:#ffd241">Python</span>
+<span style="color:#ffd241"><h1>Python</h1></span>
 <br>
 <span style="color:#536DFE">Training</span>
 
