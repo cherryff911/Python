@@ -1,7 +1,6 @@
-<br>
 <span style="color:#ffd241"><h1>Python</h1></span>
 <br>
-<span style="color:#536DFE">Training</span>
+<span style="color:#536DFE"><h2>Training</h2></span>
 
 ---
 
