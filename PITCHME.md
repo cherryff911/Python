@@ -1280,5 +1280,132 @@ If num is negative, Negative number is printed
 
 ---
 
+#### Python Nested if statements
+We can have a if...elif...else statement inside another if...elif...else statement. This is called nesting in computer programming.
 
-   
+Any number of these statements can be nested inside one another. Indentation is the only way to figure out the level of nesting. This can get confusing, so must be avoided if we can.
+
+---
+
+#### Python Nested if Example
+```python
+# In this program, we input a number
+# check if the number is positive or
+# negative or zero and display
+# an appropriate message
+# This time we use nested if
+
+num = float(input("Enter a number: "))
+if num >= 0:
+    if num == 0:
+        print("Zero")
+    else:
+        print("Positive number")
+else:
+    print("Negative number")
+```
+
+---
+
+#### Output 1
+```python
+Enter a number: 5
+Positive number
+```
+#### Output 2
+```python
+Enter a number: -1
+Negative number
+```
+#### Output 3
+```python
+Enter a number: 0
+Zero
+```
+
+---
+
+## Python for Loop
+<br>
+The for loop in Python is used to iterate over a sequence (list, tuple, string) or other iterable objects. Iterating over a sequence is called traversal.
+
+#### Syntax of for Loop
+```python
+for val in sequence:
+	Body of for
+```
+
+---
+<br>
+Here, val is the variable that takes the value of the item inside the sequence on each iteration.
+Loop continues until we reach the last item in the sequence. The body of for loop is separated from the rest of the code using indentation.
+
+---
+
+#### Example: Python for Loop
+
+```python
+# Program to find the sum of all numbers stored in a list
+
+# List of numbers
+numbers = [6, 5, 3, 8, 4, 2, 5, 4, 11]
+
+# variable to store the sum
+sum = 0
+
+# iterate over the list
+for val in numbers:
+	sum = sum+val
+
+# Output: The sum is 48
+print("The sum is", sum)
+```
+when you run the program, the output will be:
+```python
+The sum is 48
+```
+---
+
+####The range() function
+We can generate a sequence of numbers using range() function. range(10) will generate numbers from 0 to 9 (10 numbers).
+We can also define the start, stop and step size as range(start,stop,step size). step size defaults to 1 if not provided.
+
+This function does not store all the values in memory, it would be inefficient. So it remembers the start, stop, step size and generates the next number on the go.
+
+To force this function to output all the items, we can use the function list().
+*The following example will clarify this.
+
+---
+```python
+# Output: range(0, 10)
+print(range(10))
+
+# Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(list(range(10)))
+
+# Output: [2, 3, 4, 5, 6, 7]
+print(list(range(2, 8)))
+
+# Output: [2, 5, 8, 11, 14, 17]
+print(list(range(2, 20, 3)))
+```
+
+---
+<br>
+We can use the range() function in for loops to iterate through a sequence of numbers. It can be combined with the len() function to iterate though a sequence using indexing. Here is an example.
+```python
+# Program to iterate through a list using indexing
+
+genre = ['pop', 'rock', 'jazz']
+
+# iterate over the list using index
+for i in range(len(genre)):
+	print("I like", genre[i])
+```
+When you run the program, the output will be:
+```python
+I like pop
+I like rock
+​I like jazz
+```
+---
