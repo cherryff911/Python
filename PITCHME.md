@@ -119,7 +119,7 @@ This is explicit line continuation. In Python, line continuation is implied insi
 parentheses ( ), brackets [ ] and braces { }. For instance, we can implement the above 
 multi-line statement as
 
-```pyhton
+```python
 a = (1 + 2 + 3 +
     4 + 5 + 6 +
     7 + 8 + 9)
