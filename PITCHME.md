@@ -1,5 +1,5 @@
 ## Python Beginer's Course
-## DAY 02
+## DAY 01
 
 
 ---
